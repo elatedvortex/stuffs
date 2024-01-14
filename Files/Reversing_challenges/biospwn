@@ -1,0 +1,103 @@
+#1
+.section .text
+.global _start
+
+_start:
+    movq $0x1337, %rdi
+    movq $60, %rax
+    xorq %rsi, %rsi
+    syscall   
+pwn.college{8QnhiDFtZx7wccloawjR3uYV3bD.0FN5EDL5AzNzQzW}
+
+#2
+.section .text
+.global _start
+
+_start:
+    movq $0x1337, %rax
+    movq $0xCAFED00D1337BEEF, %r12
+    movq $0x31337, %rsp
+    hlt
+pwn.college{oEKvfTwKwcx2YJ119k46DC1EfyO.dBTM4MDL5AzNzQzW}
+
+
+#3
+.section .text
+.global _start
+_start:
+    addq $0x331337,%rdi
+    hlt
+pwn.college{wtAtl6ZGUmF8LmVYpvAkpjU-hw6.0VN5EDL5AzNzQzW}
+
+
+#4
+.section .text
+.global _start
+_start:
+    movq %rdi,%rax
+    imulq %rsi,%rax
+    addq %rdx,%rax
+    hlt
+pwn.college{4DxPlpCi_BftIHFs1y_iNrW6_Ru.0lN5EDL5AzNzQzW}
+
+#5
+.section .text
+.global _start
+_start:
+    movq %rdi,%rax
+    divq %rsi
+    hlt
+pwn.college{4wYh76_oUf3-jwpCA6JL9WzE7pW.01N5EDL5AzNzQzW}
+
+#6
+.section .text
+.global _start
+_start:
+	movq %rdi,%rax
+	divq %rsi
+	movq %rdx,%rax
+	hlt
+pwn.college{QinOCD95aG7liR17dR4KJb3dfbZ.0FO5EDL5AzNzQzW}
+
+#7
+section .text
+.global _start
+_start:
+	movb $0x42,%ah
+pwn.college{YfV5CqnH_2LjHpR6p84Tbzq82K9.dFTM4MDL5AzNzQzW}
+
+#8
+.section .text
+.global _start
+_start:
+   movq %rdi, %rax
+    movb $al, %ah
+    movq %rsi, %rbx
+    movw %bx, %cx
+    movq $0,%rbx
+    movw %cx,%bx
+pwn.college{U-k-ZNt5aix1arpKbVyokq3QW_f.0VO5EDL5AzNzQzW}
+#9
+.section .text 
+.global _start
+_start:
+        movq %rdi,%rax
+        shrq $32,%rax
+        shlq $120,%rax
+        shrq $120,%rax
+pwn.college{AykioFXCBIHa7xJZX17twQji1xm.0FMwIDL5AzNzQzW}
+
+#10
+  .section .text 
+.global _start
+_start:
+andq %rdi,%rsi
+xorq %rax,%rax
+addq %rdi,%rax
+ pwn.college{giyi2i9VMq7WuojsKAUp2RlMJ94.0VMwIDL5AzNzQzW}
+
+
+
+
+
+
